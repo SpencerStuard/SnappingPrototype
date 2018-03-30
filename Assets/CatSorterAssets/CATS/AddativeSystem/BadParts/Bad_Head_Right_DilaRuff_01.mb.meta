@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 353388c4bcb6c3b42a71a053712856bb
+timeCreated: 1478800637
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bad_Head_Right_DilaRuff_01
+    100004: MasterCat01_r_DilaRufA01_jj
+    100006: MasterCat01_r_DilaRufA02_jj
+    100008: MasterCat01_r_DilaRufA03_jj
+    100010: MasterCat01_r_DilaRufA04_je
+    100012: MasterCat01_r_DilaRufB01_jj
+    100014: MasterCat01_r_DilaRufB02_jj
+    100016: MasterCat01_r_DilaRufB03_jj
+    100018: MasterCat01_r_DilaRufB04_je
+    100020: MasterCat01_r_DilaRufC01_jj
+    100022: MasterCat01_r_DilaRufC02_jj
+    100024: MasterCat01_r_DilaRufC03_jj
+    100026: MasterCat01_r_DilaRufC04_je
+    100028: MasterCat01_r_DilaRufD01_jj
+    100030: MasterCat01_r_DilaRufD02_jj
+    100032: MasterCat01_r_DilaRufD03_jj
+    100034: MasterCat01_r_DilaRufD04_je
+    100036: MasterCat01_r_DilaRufE01_jj
+    100038: MasterCat01_r_DilaRufE02_jj
+    100040: MasterCat01_r_DilaRufE03_jj
+    100042: MasterCat01_r_DilaRufE04_je
+    400000: //RootNode
+    400002: Bad_Head_Right_DilaRuff_01
+    400004: MasterCat01_r_DilaRufA01_jj
+    400006: MasterCat01_r_DilaRufA02_jj
+    400008: MasterCat01_r_DilaRufA03_jj
+    400010: MasterCat01_r_DilaRufA04_je
+    400012: MasterCat01_r_DilaRufB01_jj
+    400014: MasterCat01_r_DilaRufB02_jj
+    400016: MasterCat01_r_DilaRufB03_jj
+    400018: MasterCat01_r_DilaRufB04_je
+    400020: MasterCat01_r_DilaRufC01_jj
+    400022: MasterCat01_r_DilaRufC02_jj
+    400024: MasterCat01_r_DilaRufC03_jj
+    400026: MasterCat01_r_DilaRufC04_je
+    400028: MasterCat01_r_DilaRufD01_jj
+    400030: MasterCat01_r_DilaRufD02_jj
+    400032: MasterCat01_r_DilaRufD03_jj
+    400034: MasterCat01_r_DilaRufD04_je
+    400036: MasterCat01_r_DilaRufE01_jj
+    400038: MasterCat01_r_DilaRufE02_jj
+    400040: MasterCat01_r_DilaRufE03_jj
+    400042: MasterCat01_r_DilaRufE04_je
+    4300000: Bad_Head_Right_DilaRuff_01
+    7400000: Mellow
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Bad_Head_Right_DilaRuff_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mellow
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bad_Head_Right_DilaRuff_01
+        weight: 1
+      - path: MasterCat01_r_DilaRufA01_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufA01_jj/MasterCat01_r_DilaRufA02_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufA01_jj/MasterCat01_r_DilaRufA02_jj/MasterCat01_r_DilaRufA03_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufA01_jj/MasterCat01_r_DilaRufA02_jj/MasterCat01_r_DilaRufA03_jj/MasterCat01_r_DilaRufA04_je
+        weight: 1
+      - path: MasterCat01_r_DilaRufB01_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufB01_jj/MasterCat01_r_DilaRufB02_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufB01_jj/MasterCat01_r_DilaRufB02_jj/MasterCat01_r_DilaRufB03_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufB01_jj/MasterCat01_r_DilaRufB02_jj/MasterCat01_r_DilaRufB03_jj/MasterCat01_r_DilaRufB04_je
+        weight: 1
+      - path: MasterCat01_r_DilaRufC01_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufC01_jj/MasterCat01_r_DilaRufC02_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufC01_jj/MasterCat01_r_DilaRufC02_jj/MasterCat01_r_DilaRufC03_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufC01_jj/MasterCat01_r_DilaRufC02_jj/MasterCat01_r_DilaRufC03_jj/MasterCat01_r_DilaRufC04_je
+        weight: 1
+      - path: MasterCat01_r_DilaRufD01_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufD01_jj/MasterCat01_r_DilaRufD02_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufD01_jj/MasterCat01_r_DilaRufD02_jj/MasterCat01_r_DilaRufD03_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufD01_jj/MasterCat01_r_DilaRufD02_jj/MasterCat01_r_DilaRufD03_jj/MasterCat01_r_DilaRufD04_je
+        weight: 1
+      - path: MasterCat01_r_DilaRufE01_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufE01_jj/MasterCat01_r_DilaRufE02_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufE01_jj/MasterCat01_r_DilaRufE02_jj/MasterCat01_r_DilaRufE03_jj
+        weight: 1
+      - path: MasterCat01_r_DilaRufE01_jj/MasterCat01_r_DilaRufE02_jj/MasterCat01_r_DilaRufE03_jj/MasterCat01_r_DilaRufE04_je
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

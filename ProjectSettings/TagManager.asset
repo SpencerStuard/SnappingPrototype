@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Interactable
+  - Snap_Right_Eye
+  - Snap_Mouth
+  - Snap_Back_Left_Leg
+  - Snap_Nipples
+  - Snap_Left_Eye
+  - Snap_TopHead
+  - Snap_Right_Ear
+  - Snap_Left_Ear
+  - Snap_Butt
+  - Snap_Front_Right_Leg
+  - Snap_Back_Right_Leg
+  - Snap_Tail
+  - Snap_Front_Left_Leg
+  - Snappable
+  - Cubes
+  - Snap_TopBody
+  - Snap_Ears
+  - Controller
+  - SnapZone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Interactable
+  - SnappedPart
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

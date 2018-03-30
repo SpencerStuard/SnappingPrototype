@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 035297faaf470b24b96bddf8edcbe5b7
+timeCreated: 1478564738
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Good_Body_Back_Tail_01
+    100002: //RootNode
+    100004: J_Tail_01
+    100006: J_Tail_02
+    100008: J_Tail_03
+    100010: J_Tail_04
+    100012: J_Tail_05
+    100014: TailGoe:Good_Body_Back_Tail_01
+    400000: Good_Body_Back_Tail_01
+    400002: //RootNode
+    400004: J_Tail_01
+    400006: J_Tail_02
+    400008: J_Tail_03
+    400010: J_Tail_04
+    400012: J_Tail_05
+    400014: TailGoe:Good_Body_Back_Tail_01
+    4300000: Good_Body_Back_Tail_01
+    4300002: TailGoe:Good_Body_Back_Tail_01
+    7400000: Mellow
+    7400002: Happy
+    7400004: Content
+    7400006: Excited
+    7400008: Panic
+    7400010: Angry
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Good_Body_Back_Tail_01
+    13700002: TailGoe:Good_Body_Back_Tail_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mellow
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Happy
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 460
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Content
+      takeName: Take 001
+      firstFrame: 470
+      lastFrame: 710
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Excited
+      takeName: Take 001
+      firstFrame: 720
+      lastFrame: 929
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Panic
+      takeName: Take 001
+      firstFrame: 939
+      lastFrame: 1107
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Angry
+      takeName: Take 001
+      firstFrame: 1117
+      lastFrame: 1326
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Body_Back_Tail_01
+        weight: 1
+      - path: J_Tail_01
+        weight: 1
+      - path: J_Tail_01/J_Tail_02
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04
+        weight: 1
+      - path: J_Tail_01/J_Tail_02/J_Tail_03/J_Tail_04/J_Tail_05
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

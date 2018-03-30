@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: f68b821ca63c17d4884815d7e2a6930f
+timeCreated: 1478281827
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Good_Bass_Body
+    100004: Head_Mid
+    100006: J_Body_01
+    100008: J_Body_Back_Mid_02
+    100010: J_Body_Neck_01
+    100012: J_Loc_Body_Back_Butt
+    100014: J_Loc_Body_Back_Left_Leg
+    100016: J_Loc_Body_Back_Right_Leg
+    100018: J_Loc_Body_Back_Tail
+    100020: J_Loc_Body_Belly
+    100022: J_Loc_Body_Front_Left_Leg
+    100024: J_Loc_Body_Front_Right_Leg
+    100026: J_Loc_Body_Mid_Left_Leg
+    100028: J_Loc_Body_Mid_Left_Side
+    100030: J_Loc_Body_Mid_Right_Leg
+    100032: J_Loc_Body_Mid_Right_Side
+    100034: J_Loc_Body_Mid_Top
+    100036: J_Loc_Head_Center_Top_Loc
+    100038: J_Loc_Head_Left_Ear_Loc
+    100040: J_Loc_Head_Left_Eye_Loc
+    100042: J_Loc_Head_Mouth_Loc
+    100044: J_Loc_Head_Right_Ear_Loc
+    100046: J_Loc_Head_Right_Eye_Loc
+    400000: //RootNode
+    400002: Good_Bass_Body
+    400004: Head_Mid
+    400006: J_Body_01
+    400008: J_Body_Back_Mid_02
+    400010: J_Body_Neck_01
+    400012: J_Loc_Body_Back_Butt
+    400014: J_Loc_Body_Back_Left_Leg
+    400016: J_Loc_Body_Back_Right_Leg
+    400018: J_Loc_Body_Back_Tail
+    400020: J_Loc_Body_Belly
+    400022: J_Loc_Body_Front_Left_Leg
+    400024: J_Loc_Body_Front_Right_Leg
+    400026: J_Loc_Body_Mid_Left_Leg
+    400028: J_Loc_Body_Mid_Left_Side
+    400030: J_Loc_Body_Mid_Right_Leg
+    400032: J_Loc_Body_Mid_Right_Side
+    400034: J_Loc_Body_Mid_Top
+    400036: J_Loc_Head_Center_Top_Loc
+    400038: J_Loc_Head_Left_Ear_Loc
+    400040: J_Loc_Head_Left_Eye_Loc
+    400042: J_Loc_Head_Mouth_Loc
+    400044: J_Loc_Head_Right_Ear_Loc
+    400046: J_Loc_Head_Right_Eye_Loc
+    4300000: Good_Bass_Body
+    7400000: Mellow
+    7400002: Happy
+    7400004: Content
+    7400006: Excited
+    7400008: Panic
+    7400010: Angry
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Good_Bass_Body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Fur_01
+    second: {fileID: 2100000, guid: 27d8dccbdc430db4fbfba089b4534907, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mellow
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Happy
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 460
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Content
+      takeName: Take 001
+      firstFrame: 470
+      lastFrame: 710
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Excited
+      takeName: Take 001
+      firstFrame: 720
+      lastFrame: 929
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Panic
+      takeName: Take 001
+      firstFrame: 939
+      lastFrame: 1107
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Angry
+      takeName: Take 001
+      firstFrame: 1117
+      lastFrame: 1327
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Good_Bass_Body
+        weight: 1
+      - path: J_Body_01
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Butt
+        weight: 1
+      - path: J_Body_01/J_Body_Back_Mid_02/J_Loc_Body_Back_Tail
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Center_Top_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Left_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/Head_Mid/J_Loc_Head_Right_Ear_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Left_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Mouth_Loc
+        weight: 1
+      - path: J_Body_01/J_Body_Neck_01/J_Loc_Head_Right_Eye_Loc
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Back_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Belly
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Front_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Left_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Leg
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Right_Side
+        weight: 1
+      - path: J_Body_01/J_Loc_Body_Mid_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

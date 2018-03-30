@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 9f87abe56793ad540bcd6304cb3424b4
+timeCreated: 1497495345
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bad_Head_Snoot_05
+    100002: //RootNode
+    100004: masterCat_c_dragonJaw01_jj
+    100006: masterCat_c_dragonJaw02_jj
+    100008: masterCat_c_dragonJaw03_je
+    100010: masterCat_c_dragonTongue01_jj
+    100012: masterCat_c_dragonTongue02_jj
+    100014: masterCat_c_dragonTongue03_jj
+    100016: masterCat_c_dragonTongue04_jj
+    100018: masterCat_c_dragonTongue05_je
+    100020: masterCat_l_mustache01_jj
+    100022: masterCat_l_mustache02_jj
+    100024: masterCat_l_mustache03_jj
+    100026: masterCat_l_mustache04_jj
+    100028: masterCat_l_mustache05_jj
+    100030: masterCat_l_mustache06_je
+    100032: masterCat_r_mustache01_jj
+    100034: masterCat_r_mustache02_jj
+    100036: masterCat_r_mustache03_jj
+    100038: masterCat_r_mustache04_jj
+    100040: masterCat_r_mustache05_jj
+    100042: masterCat_r_mustache06_je
+    400000: Bad_Head_Snoot_05
+    400002: //RootNode
+    400004: masterCat_c_dragonJaw01_jj
+    400006: masterCat_c_dragonJaw02_jj
+    400008: masterCat_c_dragonJaw03_je
+    400010: masterCat_c_dragonTongue01_jj
+    400012: masterCat_c_dragonTongue02_jj
+    400014: masterCat_c_dragonTongue03_jj
+    400016: masterCat_c_dragonTongue04_jj
+    400018: masterCat_c_dragonTongue05_je
+    400020: masterCat_l_mustache01_jj
+    400022: masterCat_l_mustache02_jj
+    400024: masterCat_l_mustache03_jj
+    400026: masterCat_l_mustache04_jj
+    400028: masterCat_l_mustache05_jj
+    400030: masterCat_l_mustache06_je
+    400032: masterCat_r_mustache01_jj
+    400034: masterCat_r_mustache02_jj
+    400036: masterCat_r_mustache03_jj
+    400038: masterCat_r_mustache04_jj
+    400040: masterCat_r_mustache05_jj
+    400042: masterCat_r_mustache06_je
+    4300000: Bad_Head_Snoot_05
+    7400000: Mellow
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Bad_Head_Snoot_05
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mellow
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bad_Head_Snoot_05
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonJaw03_je
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonTongue01_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonTongue01_jj/masterCat_c_dragonTongue02_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonTongue01_jj/masterCat_c_dragonTongue02_jj/masterCat_c_dragonTongue03_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonTongue01_jj/masterCat_c_dragonTongue02_jj/masterCat_c_dragonTongue03_jj/masterCat_c_dragonTongue04_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_c_dragonJaw02_jj/masterCat_c_dragonTongue01_jj/masterCat_c_dragonTongue02_jj/masterCat_c_dragonTongue03_jj/masterCat_c_dragonTongue04_jj/masterCat_c_dragonTongue05_je
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj/masterCat_l_mustache02_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj/masterCat_l_mustache02_jj/masterCat_l_mustache03_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj/masterCat_l_mustache02_jj/masterCat_l_mustache03_jj/masterCat_l_mustache04_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj/masterCat_l_mustache02_jj/masterCat_l_mustache03_jj/masterCat_l_mustache04_jj/masterCat_l_mustache05_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_l_mustache01_jj/masterCat_l_mustache02_jj/masterCat_l_mustache03_jj/masterCat_l_mustache04_jj/masterCat_l_mustache05_jj/masterCat_l_mustache06_je
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj/masterCat_r_mustache02_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj/masterCat_r_mustache02_jj/masterCat_r_mustache03_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj/masterCat_r_mustache02_jj/masterCat_r_mustache03_jj/masterCat_r_mustache04_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj/masterCat_r_mustache02_jj/masterCat_r_mustache03_jj/masterCat_r_mustache04_jj/masterCat_r_mustache05_jj
+        weight: 1
+      - path: masterCat_c_dragonJaw01_jj/masterCat_r_mustache01_jj/masterCat_r_mustache02_jj/masterCat_r_mustache03_jj/masterCat_r_mustache04_jj/masterCat_r_mustache05_jj/masterCat_r_mustache06_je
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

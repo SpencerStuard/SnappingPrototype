@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: 848c57c4b5cd315489005d6a12764227
+timeCreated: 1498160265
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bad_Body_left_DragonWings_01
+    100004: Bad_Body_right_DragonWings_01
+    100006: masterCat1_l_dragonWings01_jj
+    100008: masterCat1_l_dragonWings02_jj
+    100010: masterCat1_l_dragonWings03_jj
+    100012: masterCat1_l_dragonWings04_jj
+    100014: masterCat1_l_dragonWings05_jj
+    100016: masterCat1_l_dragonWings06_je
+    100018: masterCat1_l_dragonWingsA01_jj
+    100020: masterCat1_l_dragonWingsA02_je
+    100022: masterCat1_l_dragonWingsB01_jj
+    100024: masterCat1_l_dragonWingsB02_je
+    100026: masterCat1_l_dragonWingsC01_jj
+    100028: masterCat1_l_dragonWingsC02_je
+    100030: masterCat1_r_dragonWings01_jj
+    100032: masterCat1_r_dragonWings02_jj
+    100034: masterCat1_r_dragonWings03_jj
+    100036: masterCat1_r_dragonWings04_jj
+    100038: masterCat1_r_dragonWings05_jj
+    100040: masterCat1_r_dragonWings06_je
+    100042: masterCat1_r_dragonWingsA01_jj
+    100044: masterCat1_r_dragonWingsA02_je
+    100046: masterCat1_r_dragonWingsB01_jj
+    100048: masterCat1_r_dragonWingsB02_je
+    100050: masterCat1_r_dragonWingsC01_jj
+    100052: masterCat1_r_dragonWingsC02_je
+    400000: //RootNode
+    400002: Bad_Body_left_DragonWings_01
+    400004: Bad_Body_right_DragonWings_01
+    400006: masterCat1_l_dragonWings01_jj
+    400008: masterCat1_l_dragonWings02_jj
+    400010: masterCat1_l_dragonWings03_jj
+    400012: masterCat1_l_dragonWings04_jj
+    400014: masterCat1_l_dragonWings05_jj
+    400016: masterCat1_l_dragonWings06_je
+    400018: masterCat1_l_dragonWingsA01_jj
+    400020: masterCat1_l_dragonWingsA02_je
+    400022: masterCat1_l_dragonWingsB01_jj
+    400024: masterCat1_l_dragonWingsB02_je
+    400026: masterCat1_l_dragonWingsC01_jj
+    400028: masterCat1_l_dragonWingsC02_je
+    400030: masterCat1_r_dragonWings01_jj
+    400032: masterCat1_r_dragonWings02_jj
+    400034: masterCat1_r_dragonWings03_jj
+    400036: masterCat1_r_dragonWings04_jj
+    400038: masterCat1_r_dragonWings05_jj
+    400040: masterCat1_r_dragonWings06_je
+    400042: masterCat1_r_dragonWingsA01_jj
+    400044: masterCat1_r_dragonWingsA02_je
+    400046: masterCat1_r_dragonWingsB01_jj
+    400048: masterCat1_r_dragonWingsB02_je
+    400050: masterCat1_r_dragonWingsC01_jj
+    400052: masterCat1_r_dragonWingsC02_je
+    4300000: Bad_Body_left_DragonWings_01
+    4300002: Bad_Body_right_DragonWings_01
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Bad_Body_left_DragonWings_01
+    13700002: Bad_Body_right_DragonWings_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bad_Body_left_DragonWings_01
+        weight: 1
+      - path: Bad_Body_right_DragonWings_01
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj/masterCat1_l_dragonWings06_je
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj/masterCat1_l_dragonWings06_je/masterCat1_l_dragonWingsC01_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj/masterCat1_l_dragonWings06_je/masterCat1_l_dragonWingsC01_jj/masterCat1_l_dragonWingsC02_je
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj/masterCat1_l_dragonWingsB01_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWings05_jj/masterCat1_l_dragonWingsB01_jj/masterCat1_l_dragonWingsB02_je
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWingsA01_jj
+        weight: 1
+      - path: masterCat1_l_dragonWings01_jj/masterCat1_l_dragonWings02_jj/masterCat1_l_dragonWings03_jj/masterCat1_l_dragonWings04_jj/masterCat1_l_dragonWingsA01_jj/masterCat1_l_dragonWingsA02_je
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj/masterCat1_r_dragonWings06_je
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj/masterCat1_r_dragonWings06_je/masterCat1_r_dragonWingsC01_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj/masterCat1_r_dragonWings06_je/masterCat1_r_dragonWingsC01_jj/masterCat1_r_dragonWingsC02_je
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj/masterCat1_r_dragonWingsB01_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWings05_jj/masterCat1_r_dragonWingsB01_jj/masterCat1_r_dragonWingsB02_je
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWingsA01_jj
+        weight: 1
+      - path: masterCat1_r_dragonWings01_jj/masterCat1_r_dragonWings02_jj/masterCat1_r_dragonWings03_jj/masterCat1_r_dragonWings04_jj/masterCat1_r_dragonWingsA01_jj/masterCat1_r_dragonWingsA02_je
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

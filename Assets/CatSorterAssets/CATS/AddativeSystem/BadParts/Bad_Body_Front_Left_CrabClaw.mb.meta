@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: b8115f8722d5123438c8cb7654b1557e
+timeCreated: 1497335183
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bad_Body_Front_Left_CrabClaw_01
+    100004: MasterCat01_l_crabClaw01_jj
+    100006: MasterCat01_l_crabClaw02_jj
+    100008: MasterCat01_l_crabClaw03_jj
+    100010: MasterCat01_l_crabClawDown01_jj
+    100012: MasterCat01_l_crabClawDown02_jj
+    100014: MasterCat01_l_crabClawDown03_jj
+    100016: MasterCat01_l_crabClawDown04_je
+    100018: MasterCat01_l_crabClawUp01_jj
+    100020: MasterCat01_l_crabClawUp02_jj
+    100022: MasterCat01_l_crabClawUp03_je
+    400000: //RootNode
+    400002: Bad_Body_Front_Left_CrabClaw_01
+    400004: MasterCat01_l_crabClaw01_jj
+    400006: MasterCat01_l_crabClaw02_jj
+    400008: MasterCat01_l_crabClaw03_jj
+    400010: MasterCat01_l_crabClawDown01_jj
+    400012: MasterCat01_l_crabClawDown02_jj
+    400014: MasterCat01_l_crabClawDown03_jj
+    400016: MasterCat01_l_crabClawDown04_je
+    400018: MasterCat01_l_crabClawUp01_jj
+    400020: MasterCat01_l_crabClawUp02_jj
+    400022: MasterCat01_l_crabClawUp03_je
+    4300000: Bad_Body_Front_Left_CrabClaw_01
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Bad_Body_Front_Left_CrabClaw_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 240
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bad_Body_Front_Left_CrabClaw_01
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawDown01_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawDown01_jj/MasterCat01_l_crabClawDown02_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawDown01_jj/MasterCat01_l_crabClawDown02_jj/MasterCat01_l_crabClawDown03_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawDown01_jj/MasterCat01_l_crabClawDown02_jj/MasterCat01_l_crabClawDown03_jj/MasterCat01_l_crabClawDown04_je
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawUp01_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawUp01_jj/MasterCat01_l_crabClawUp02_jj
+        weight: 1
+      - path: MasterCat01_l_crabClaw01_jj/MasterCat01_l_crabClaw02_jj/MasterCat01_l_crabClaw03_jj/MasterCat01_l_crabClawUp01_jj/MasterCat01_l_crabClawUp02_jj/MasterCat01_l_crabClawUp03_je
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

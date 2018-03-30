@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 8ad876c559076a640baaabbd0b6e7144
+timeCreated: 1498030753
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bad_Body_left_Top_HawkWings_02
+    100004: Bad_Body_right_Top_HawkWings_03
+    100006: masterCat01_l_hawkWings01_jj
+    100008: masterCat01_l_hawkWings02_jj
+    100010: masterCat01_l_hawkWings03_jj
+    100012: masterCat01_l_hawkWings04_jj
+    100014: masterCat01_l_hawkWings05_je
+    100016: masterCat01_r_hawkWings01_jj
+    100018: masterCat01_r_hawkWings02_jj
+    100020: masterCat01_r_hawkWings03_jj
+    100022: masterCat01_r_hawkWings04_jj
+    100024: masterCat01_r_hawkWings05_je
+    400000: //RootNode
+    400002: Bad_Body_left_Top_HawkWings_02
+    400004: Bad_Body_right_Top_HawkWings_03
+    400006: masterCat01_l_hawkWings01_jj
+    400008: masterCat01_l_hawkWings02_jj
+    400010: masterCat01_l_hawkWings03_jj
+    400012: masterCat01_l_hawkWings04_jj
+    400014: masterCat01_l_hawkWings05_je
+    400016: masterCat01_r_hawkWings01_jj
+    400018: masterCat01_r_hawkWings02_jj
+    400020: masterCat01_r_hawkWings03_jj
+    400022: masterCat01_r_hawkWings04_jj
+    400024: masterCat01_r_hawkWings05_je
+    4300000: Bad_Body_left_Top_HawkWings_02
+    4300002: Bad_Body_right_Top_HawkWings_03
+    7400000: Mellow
+    9500000: //RootNode
+    11100000: //RootNode
+    11400000: //RootNode
+    13700000: Bad_Body_left_Top_HawkWings_02
+    13700002: Bad_Body_right_Top_HawkWings_03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mellow
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bad_Body_left_Top_HawkWings_02
+        weight: 1
+      - path: Bad_Body_right_Top_HawkWings_03
+        weight: 1
+      - path: masterCat01_l_hawkWings01_jj
+        weight: 1
+      - path: masterCat01_l_hawkWings01_jj/masterCat01_l_hawkWings02_jj
+        weight: 1
+      - path: masterCat01_l_hawkWings01_jj/masterCat01_l_hawkWings02_jj/masterCat01_l_hawkWings03_jj
+        weight: 1
+      - path: masterCat01_l_hawkWings01_jj/masterCat01_l_hawkWings02_jj/masterCat01_l_hawkWings03_jj/masterCat01_l_hawkWings04_jj
+        weight: 1
+      - path: masterCat01_l_hawkWings01_jj/masterCat01_l_hawkWings02_jj/masterCat01_l_hawkWings03_jj/masterCat01_l_hawkWings04_jj/masterCat01_l_hawkWings05_je
+        weight: 1
+      - path: masterCat01_r_hawkWings01_jj
+        weight: 1
+      - path: masterCat01_r_hawkWings01_jj/masterCat01_r_hawkWings02_jj
+        weight: 1
+      - path: masterCat01_r_hawkWings01_jj/masterCat01_r_hawkWings02_jj/masterCat01_r_hawkWings03_jj
+        weight: 1
+      - path: masterCat01_r_hawkWings01_jj/masterCat01_r_hawkWings02_jj/masterCat01_r_hawkWings03_jj/masterCat01_r_hawkWings04_jj
+        weight: 1
+      - path: masterCat01_r_hawkWings01_jj/masterCat01_r_hawkWings02_jj/masterCat01_r_hawkWings03_jj/masterCat01_r_hawkWings04_jj/masterCat01_r_hawkWings05_je
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
