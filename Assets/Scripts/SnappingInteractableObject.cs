@@ -7,64 +7,45 @@ public class SnappingInteractableObject : InteractableObject
 
     bool snapped = false;
     SnapPoint snappedToPoint;
-    Transform presnapParent;
+    public Transform presnapParent;
 
     public bool inSnapZone = false;
     public List<SnapZone> snapZones = new List<SnapZone>();
     public SnapPoint potentialSnapPoint;
     public GameObject previewSnapObject;
+    public Bounds combinedBounds;
+
+    public bool isDynamic = false;
 
 	// Use this for initialization
 	public override void Start ()
     {
         base.Start();
         presnapParent = transform.parent;
+        CalculateCombinedBounds();
 	}
 
-    public override void OnCompoundTriggerEnter(Collider other)
+    void CalculateCombinedBounds()
     {
-        base.OnCompoundTriggerEnter(other);
-
-        if (other.gameObject.tag == "SnapZone")
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        if (GetComponent<Renderer>())
         {
-            if (snapZones.Contains(other.GetComponent<SnapZone>())) return;
-            inSnapZone = true;
-            snapZones.Add(other.GetComponent<SnapZone>());
+            combinedBounds = GetComponent<Renderer>().bounds;
+        }
+        else
+        {
+            combinedBounds = renderers[0].bounds;
+
+        }
+
+        foreach (Renderer r in renderers)
+        {
+            combinedBounds.Encapsulate(r.bounds);
         }
     }
 
-    public override void OnCompoundTriggerExit(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        base.OnCompoundTriggerExit(other);
-
-        if (other.gameObject.tag == "SnapZone")
-        {
-            snapZones.Remove(other.GetComponent<SnapZone>());
-            if (snapZones.Count <= 0)
-            {
-                Destroy(previewSnapObject);
-                potentialSnapPoint = null;
-                inSnapZone = false;
-            }
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Controller")
-        {
-            Debug.Log("Detected Coliision with controller");
-        }
-    }
-
-    public override void OnTriggerEnter(Collider other)
-    {
-        if (colliderMode == ColliderModeType.Compound) return;
-        if (other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().AddInteractableObject(this);
-        }
-
         if(other.gameObject.tag == "SnapZone")
         {
             if (snapZones.Contains(other.GetComponent<SnapZone>())) return;
@@ -73,14 +54,8 @@ public class SnappingInteractableObject : InteractableObject
         }
     }
 
-    public override void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
-        if (colliderMode == ColliderModeType.Compound) return;
-        if (other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().RemoveInteractableObject(this);
-        }
-
         if (other.gameObject.tag == "SnapZone")
         {
             snapZones.Remove(other.GetComponent<SnapZone>());
@@ -116,6 +91,8 @@ public class SnappingInteractableObject : InteractableObject
         if (inSnapZone && potentialSnapPoint != null)
         {
             FinalizeSnap();
+            VRSystemInput.Input.leftHand.RemoveInteractableObject(this);
+            VRSystemInput.Input.rightHand.RemoveInteractableObject(this);
         }
         else
         {
@@ -158,7 +135,7 @@ public class SnappingInteractableObject : InteractableObject
 
         if(previewSnapObject == null)
         {
-            previewSnapObject = (GameObject) Instantiate(gameObject, potentialSnapPoint.transform);
+            previewSnapObject = (GameObject) Instantiate(gameObject, potentialSnapPoint.transform.position, potentialSnapPoint.transform.rotation, potentialSnapPoint.transform);
             InteractableObject i = previewSnapObject.GetComponent<InteractableObject>();
             i.rb.detectCollisions = false;
             Object.DestroyImmediate(i);
@@ -181,40 +158,19 @@ public class SnappingInteractableObject : InteractableObject
         }
 
         Destroy(previewSnapObject);
-        transform.parent = potentialSnapPoint.transform;
-        transform.localPosition = Vector3.zero;
-        transform.localEulerAngles = Vector3.zero;
-        snapped = true;
         snappedToPoint = potentialSnapPoint;
-
-        foreach (Transform t in transform.GetComponentsInChildren<Transform>())
-        {
-            t.gameObject.layer = 9;
-        }
-        rb.isKinematic = true;
-
-        snappedToPoint.occupied = true;
-        snappedToPoint.snappedObject = this;
-
+        snappedToPoint.SnapObject(this, isDynamic);
+        snapped = true;
         potentialSnapPoint = null;
     }
 
     void UnSnap()
     {
-        snappedToPoint.occupied = false;
-        snappedToPoint.snappedObject = null;
-
-        foreach (Transform t in transform.GetComponentsInChildren<Transform>())
-        {
-            t.gameObject.layer = 8;
-        }
-        rb.isKinematic = false;
-
-
+        snappedToPoint.UnsnapObject(this, isDynamic);
         snapped = false;
         snappedToPoint = null;
-        transform.parent = presnapParent;
     }
+
 
     // Update is called once per frame
     void Update ()

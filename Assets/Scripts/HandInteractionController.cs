@@ -7,6 +7,8 @@ public class HandInteractionController : MonoBehaviour
     public VRSystemInput.Hand hand = VRSystemInput.Hand.Left;
 
     public List<InteractableObject> interactablesInRange = new List<InteractableObject>();
+    Dictionary<InteractableObject, int> interactableDictionary = new Dictionary<InteractableObject, int>();
+
     public Transform holdPoint;
     public InteractableObject heldObject;
     public FixedJoint tempJoint;
@@ -38,6 +40,76 @@ public class HandInteractionController : MonoBehaviour
         return heldObject != null;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Interactable")
+        {
+            InteractableObject io = null;
+            if (other.gameObject.GetComponent<InteractableObject>())
+            {
+                io = other.gameObject.GetComponent<InteractableObject>();
+            }
+            else
+            {
+                io = other.gameObject.GetComponentInParent<InteractableObject>();
+            }
+
+            if(io != null)
+            {
+                if (interactableDictionary.ContainsKey(io))
+                {
+                    interactableDictionary[io]++;
+                }
+                else
+                {
+                    AddInteractableObject(io);
+                }
+            }
+            else
+            {
+                Debug.LogError("Could not find interactable object for collider");
+            }
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Interactable")
+        {
+            InteractableObject io = null;
+            if (other.gameObject.GetComponent<InteractableObject>())
+            {
+                io = other.gameObject.GetComponent<InteractableObject>();
+            }
+            else
+            {
+                io = other.gameObject.GetComponentInParent<InteractableObject>();
+            }
+
+            if (io != null)
+            {
+                if (interactableDictionary.ContainsKey(io))
+                {
+                    interactableDictionary[io]--;
+                    if(interactableDictionary[io] <= 0)
+                    {
+                        RemoveInteractableObject(io);
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Untracked Interactable left controller Trigger zone");
+                }
+            }
+            else
+            {
+                Debug.LogError("Could not find interactable object for collider");
+            }
+
+        }
+    }
+
     private int CompareInteractableDistance(InteractableObject o1, InteractableObject o2)
     {
         float d1 = Vector3.Distance(gameObject.transform.position, o1.transform.position);
@@ -48,17 +120,16 @@ public class HandInteractionController : MonoBehaviour
 
     public void AddInteractableObject(InteractableObject o)
     {
-        if (!interactablesInRange.Contains(o))
-        {
-            interactablesInRange.Add(o);
-        }
+        interactablesInRange.Add(o);
+        interactableDictionary.Add(o, 1);
     }
 
     public void RemoveInteractableObject(InteractableObject o)
     {
-        if (interactablesInRange.Contains(o))
+        if (interactablesInRange.Contains(o) && interactableDictionary.ContainsKey(o))
         {
             interactablesInRange.Remove(o);
+            interactableDictionary.Remove(o);
         }
     }
 

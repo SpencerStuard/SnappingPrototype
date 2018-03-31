@@ -6,6 +6,8 @@ public abstract class VRSystemInput : MonoBehaviour
 {
     //singleton access
     public static VRSystemInput Input;
+    public HandInteractionController leftHand;
+    public HandInteractionController rightHand;
     public void Awake()
     {
         if(VRSystemInput.Input == null)

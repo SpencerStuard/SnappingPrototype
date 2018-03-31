@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    public enum ColliderModeType
-    {
-        Self, Compound
-    }
-
-    public ColliderModeType colliderMode = ColliderModeType.Self;
     public bool interactable = true;
     public bool usePickupButton = true;
     public bool useInteractButton = false;
@@ -24,40 +18,6 @@ public class InteractableObject : MonoBehaviour
     {
         input = VRSystemInput.Input;
         rb = GetComponent<Rigidbody>();
-    }
-
-    public virtual void OnCompoundTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().AddInteractableObject(this);
-        }
-    }
-
-    public virtual void OnCompoundTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().RemoveInteractableObject(this);
-        }
-    }
-
-    public virtual void OnTriggerEnter(Collider other)
-    {
-        if (colliderMode == ColliderModeType.Compound) return;
-        if(other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().AddInteractableObject(this);
-        }
-    }
-
-    public virtual void OnTriggerExit(Collider other)
-    {
-        if (colliderMode == ColliderModeType.Compound) return;
-        if (other.gameObject.tag == "Controller")
-        {
-            other.GetComponent<HandInteractionController>().RemoveInteractableObject(this);
-        }
     }
 
     public virtual void OnBeginHighlight()
