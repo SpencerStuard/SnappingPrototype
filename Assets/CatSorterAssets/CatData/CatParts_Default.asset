@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1433a3533dfba4f8891fe788a30fed, type: 3}
+  m_Name: CatParts_Default
+  m_EditorClassIdentifier: 
+  CatTypes:
+  - {fileID: 11400000, guid: 08283bae064ce7d46b5795e0bc511b52, type: 2}
+  - {fileID: 11400000, guid: 458559b18af319f4cb95f4500d14dba5, type: 2}
+  - {fileID: 11400000, guid: 1fd328d8ffaec48459ff90a78d3d7642, type: 2}
+  - {fileID: 11400000, guid: 0e5c70c946989b944bb5f6f58c770781, type: 2}
+  - {fileID: 11400000, guid: 4ed037847685df04499575e0d3c87b2e, type: 2}
+  - {fileID: 11400000, guid: f53cdd5a89cdae24787b4015d0d97584, type: 2}
+  - {fileID: 11400000, guid: 218901ea24762104da305feec15df33e, type: 2}
+  GoodBodyBase: []
+  GoodFrontLeftLeg: []
+  GoodFrontRightLeg: []
+  GoodBackLeftLeg: []
+  GoodBackRightLeg: []
+  GoodLeftEar: []
+  GoodRightEar: []
+  GoodMouth: []
+  GoodTail: []
+  GoodLeftEye: []
+  GoodRightEye: []
+  GoodButts: []
+  BadBodyBase: []
+  BadFrontLeftLeg_: []
+  BadFrontRightLeg: []
+  BadBackLeftLeg: []
+  BadBackRightLeg: []
+  BadLeftEar: []
+  BadRightEar: []
+  BadMouth: []
+  BadTail: []
+  BadLeftEye: []
+  BadRightEye: []
+  BadButts: []
+  BadHorns: []
+  BadWings: []
+  BadNippels: []

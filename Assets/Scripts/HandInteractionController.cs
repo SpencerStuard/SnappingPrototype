@@ -150,6 +150,14 @@ public class HandInteractionController : MonoBehaviour
         Object.DestroyImmediate(tempJoint);
     }
 
+    public void HoldSpawnedObject(GameObject g)
+    {
+        InteractableObject o = g.GetComponent<InteractableObject>();
+        if (o.rb == null) o.rb = o.GetComponent<Rigidbody>();
+        Debug.Log("Hold Spawned Object " + g.name);
+        HoldObject(o);
+    }
+
     public void HoldObject(InteractableObject io)
     {
         io.OnHoldInteractable(this);

@@ -6,7 +6,6 @@ public class SnapPoint : MonoBehaviour
 {
     public bool occupied;
     public SnappingInteractableObject snappedObject;
-    GameObject imposter;
     InteractableObject root;
     FixedJoint snapJoint;
     Rigidbody rb;
@@ -16,7 +15,7 @@ public class SnapPoint : MonoBehaviour
         root = gameObject.GetComponentInParent<InteractableObject>();
     }
 
-    public void SnapObject(SnappingInteractableObject sio, bool isDynamic)
+    public virtual void SnapObject(SnappingInteractableObject sio, bool isDynamic)
     {
         snappedObject = sio;
         occupied = true;
@@ -28,7 +27,7 @@ public class SnapPoint : MonoBehaviour
         sio.transform.position = transform.position;
         sio.transform.rotation = transform.rotation;
 
-        //change object layers
+        //chatnge object layers
         sio.gameObject.layer = 9;
         foreach (Transform t in sio.transform.GetComponentsInChildren<Transform>())
         {
@@ -50,6 +49,8 @@ public class SnapPoint : MonoBehaviour
 
     }
 
+
+
     void CheckForClippedGeo()
     {
         if (root.beingHeld) return;
@@ -67,7 +68,7 @@ public class SnapPoint : MonoBehaviour
         }
     }
 
-    public void UnsnapObject(SnappingInteractableObject sio, bool isDynamic)
+    public virtual void UnsnapObject(SnappingInteractableObject sio, bool isDynamic)
     {
 
         //change object layers
