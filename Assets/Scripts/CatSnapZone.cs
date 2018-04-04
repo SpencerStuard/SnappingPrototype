@@ -12,7 +12,6 @@ public class CatSnapZone : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        snapPoints = GetComponentsInChildren<CatSnapPoint>().ToList();	
 	}
 	
 

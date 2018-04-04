@@ -8,7 +8,6 @@ TagManager:
   - Snap_Right_Eye
   - Snap_Mouth
   - Snap_Back_Left_Leg
-  - Snap_Nipples
   - Snap_Left_Eye
   - Snap_TopHead
   - Snap_Right_Ear
@@ -20,8 +19,6 @@ TagManager:
   - Snap_Front_Left_Leg
   - Snappable
   - Cubes
-  - Snap_TopBody
-  - Snap_Ears
   - Controller
   - SnapZone
   layers:

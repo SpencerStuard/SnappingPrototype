@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CatDataTypes;
 
 public class CatSnapPoint : MonoBehaviour
 {
-    public CatDataTypes.CatPartType snapPointType;
 
+    public CatJointType jointType;
+    public CatLimbType limbType;
 
     public bool occupied;
     public SnappingCatPart snappedObject;
@@ -17,16 +19,18 @@ public class CatSnapPoint : MonoBehaviour
     private void Start()
     {
         root = gameObject.GetComponentInParent<InteractableObject>();
-        cat = gameObject.GetComponentInParent<CatInstance>();
+        if(cat == null) cat = gameObject.GetComponentInParent<CatInstance>();
     }
 
-    public virtual void SnapObject(SnappingCatPart sio, bool isDynamic)
+    void SnapObject(SnappingCatPart sio)
     {
+        bool isDynamic = sio.isDynamic;
         snappedObject = sio;
         occupied = true;
 
+
         //check collision
-        CheckForClippedGeo();
+        if(root != null) CheckForClippedGeo();
         
         //snap position
         sio.transform.position = transform.position;
@@ -49,12 +53,75 @@ public class CatSnapPoint : MonoBehaviour
         else
         {
             sio.transform.parent = transform;
-            DestroyImmediate(sio.rb);
+            DestroyImmediate(sio.gameObject.GetComponent<Rigidbody>());
         }
 
     }
 
+    public void ValidatePartAndPreview()
+    {
 
+    }
+
+    public void ValidatePartAndSnap(SnappingCatPart sio)
+    {
+        bool goodSnap = false;
+
+        if(limbType == sio.partReference.limbType)
+        {
+            //placed into right limb type
+            goodSnap = sio.partReference.isGoodPart;
+
+            if (jointType != sio.partReference.jointType)
+            {
+                sio = SwapForCorrectPart(sio);
+            }
+        }
+
+        if (sio.partReference.isGoodPart && cat.furType != sio.partReference.furType)
+        {
+            cat.furType.ChangePartToMatch(sio.gameObject);
+        }
+
+        SnapObject(sio);
+    }
+
+    SnappingCatPart SwapForCorrectPart(SnappingCatPart sio)
+    {
+        SnappingCatPart newPart = SpawnPartFromSet(sio.partReference.fromSet);
+        DestroyImmediate(sio.gameObject);
+        return newPart;
+    }
+
+    public SnappingCatPart SpawnPartFromSet(CatSet set)
+    {
+        GameObject prefabToSpawn = set.GetPrefabForJointType(jointType);
+        GameObject newPart = (GameObject)Instantiate(prefabToSpawn, transform.position, transform.rotation);
+        SnappingCatPart newCatPart = newPart.GetComponent<SnappingCatPart>();
+        newCatPart.snapped = true;
+        newCatPart.snappedToPoint = this;
+        newCatPart.presnapParent = null;
+        return newCatPart;
+    }
+
+
+    public void SpawnAndSnapFromPrefab(GameObject prefab, CatInstance c)
+    {
+        cat = c;
+        GameObject newPart = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
+        SnappingCatPart newCatPart = newPart.GetComponent<SnappingCatPart>();
+        newCatPart.snapped = true;
+        newCatPart.snappedToPoint = this;
+        newCatPart.presnapParent = null;
+        cat.furType.ChangePartToMatch(newPart);
+
+        if(newCatPart.partReference.isGoodPart && cat.furType != newCatPart.partReference.furType)
+        {
+            cat.furType.ChangePartToMatch(newPart);
+        }
+
+        SnapObject(newCatPart);
+    }
 
     void CheckForClippedGeo()
     {
@@ -69,12 +136,12 @@ public class CatSnapPoint : MonoBehaviour
             {
                 root.transform.Translate(Vector3.up * offset * 1.1f);
             }
-
         }
     }
 
-    public virtual void UnsnapObject(SnappingCatPart sio, bool isDynamic)
+    public virtual void UnsnapObject(SnappingCatPart sio)
     {
+        bool isDynamic = sio.isDynamic;
 
         //change object layers
         sio.gameObject.layer = 8;

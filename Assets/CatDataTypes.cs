@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class CatDataTypes
+namespace CatDataTypes
 {
     public enum CatLimbType
     {
@@ -16,7 +16,7 @@ public static class CatDataTypes
         Horns,
         Wings,
         Nipples
-    }    
+    }
 
     public enum CatJointType
     {
@@ -41,17 +41,23 @@ public static class CatDataTypes
         Nipples
     }
 
-    [System.Serializable]
-    public class CatPartType
-    {
-        public CatJointType jointType;
-        public CatLimbType limbType;
-    }
 
     [System.Serializable]
-    public class CatPartInstance
+    public class CatPartReference
     {
-        public CatPartType partType;
+        public bool isGoodPart = false;
+        public CatFurType furType = null;
+        public CatJointType jointType;
+        public CatLimbType limbType;
         public CatSet fromSet;
+
+        public CatPartReference(CatJointType jType, CatLimbType lType, CatSet set)
+        {
+            jointType = jType;
+            limbType = lType;
+            fromSet = set;
+        }
     }
+
+
 }

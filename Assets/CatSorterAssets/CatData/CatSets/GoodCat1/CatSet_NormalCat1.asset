@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9edbd4c04b35b4d8355f04a08959d9, type: 3}
+  m_Name: CatSet_NormalCat1
+  m_EditorClassIdentifier: 
+  Name: Normal Cat 1
+  unlocked: 1
+  bodyTexture: {fileID: 0}
+  eyeTexture: {fileID: 2800000, guid: 951fdf111809c884cb9a1136f2bb12d6, type: 3}
+  BodyPrefab: {fileID: 1208061146843286, guid: 2af697db7ad929045b854b6952ffa006, type: 2}
+  FrontLeftLegPrefab: {fileID: 1343253087703318, guid: 56f243b9683d2a2478f5ec6de13c41ae,
+    type: 2}
+  FrontRightLegPrefab: {fileID: 1944145971986740, guid: 58cd0ddd0a7c04049930f91c13fa9d03,
+    type: 2}
+  BackLeftLegPrefab: {fileID: 1332124057862310, guid: 69ebcf49b3195fd40947771bf2c8c785,
+    type: 2}
+  BackRightLegPrefab: {fileID: 1574249617047300, guid: 392793881d870e640999a435843530e6,
+    type: 2}
+  LeftEar: {fileID: 1679979239604410, guid: f6dc602a155ba8840978b405cb69477c, type: 2}
+  RightEar: {fileID: 1527757729726548, guid: be3dd8e6215156d43ba8a5098c3412ec, type: 2}
+  LeftEye: {fileID: 1160825192018318, guid: 3deef6200756bab46abaffff0579b4f5, type: 2}
+  RightEye: {fileID: 1788456166200460, guid: d76f28b22e6d93249b78be6ec5fa6d6f, type: 2}
+  Mouth: {fileID: 1263601440990328, guid: 7e4074461cedf504eb0efd13a395a827, type: 2}
+  Tail: {fileID: 1192308267806120, guid: 0ccc6e7d7c179ae43bdd3506d0225a25, type: 2}
+  Butt: {fileID: 1342941432003076, guid: ba4e67974d0b6c84fab5fb9d25585ca7, type: 2}
+  Horns: {fileID: 0}
+  Wings: {fileID: 0}
+  Nipples: {fileID: 0}

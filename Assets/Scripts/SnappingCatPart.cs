@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CatDataTypes;
 
 public class SnappingCatPart : InteractableObject
 {
 
-    bool snapped = false;
-    CatSnapPoint snappedToPoint;
-    public Transform presnapParent;
+    public bool snapped = false;
+    public CatSnapPoint snappedToPoint;
+    public Transform presnapParent = null;
 
     public bool inSnapZone = false;
     public List<CatSnapZone> snapZones = new List<CatSnapZone>();
@@ -18,13 +19,12 @@ public class SnappingCatPart : InteractableObject
     public bool isDynamic = false;
 
     //CatStuff
-    public CatDataTypes.CatPartInstance partInstance;
+    public CatPartReference partReference;
 
     // Use this for initialization
     public override void Start ()
     {
         base.Start();
-        presnapParent = transform.parent;
         CalculateCombinedBounds();
 	}
 
@@ -161,16 +161,17 @@ public class SnappingCatPart : InteractableObject
             Debug.LogWarning("Could not find good snap point");
         }
 
-        Destroy(previewSnapObject);
-        snappedToPoint = potentialSnapPoint;
-        snappedToPoint.SnapObject(this, isDynamic);
         snapped = true;
+        snappedToPoint = potentialSnapPoint;
+
+        Destroy(previewSnapObject);
+        snappedToPoint.ValidatePartAndSnap(this);
         potentialSnapPoint = null;
     }
 
     void UnSnap()
     {
-        snappedToPoint.UnsnapObject(this, isDynamic);
+        snappedToPoint.UnsnapObject(this);
         snapped = false;
         snappedToPoint = null;
     }

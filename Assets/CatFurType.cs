@@ -6,4 +6,13 @@ using UnityEngine;
 public class CatFurType : ScriptableObject
 {
     public Texture furTexture;
+
+    public void ChangePartToMatch(GameObject g)
+    {
+        Renderer[] renderers = g.GetComponentsInChildren<Renderer>();
+        foreach(Renderer r in renderers)
+        {
+            r.material.mainTexture = furTexture;
+        }
+    }
 }

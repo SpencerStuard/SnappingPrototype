@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CatDataTypes;
 
 [System.Serializable, CreateAssetMenu(menuName = "CatSet", fileName = "CatSet_Default", order = 0)]
 public class CatSet : ScriptableObject
 {
     public string Name;
-    public bool isGoodSet = false;
     public bool unlocked = false;
+    public bool isGoodSet = false;
 
-    public List<CatFurType> validFurTypes = new List<CatFurType>();
-    public List<CatEyeType> validEyeTypes = new List<CatEyeType>();
+    public Texture bodyTexture; //Irrelevent for Good Set
+    public Texture eyeTexture;
 
     public GameObject BodyPrefab;
     public GameObject FrontLeftLegPrefab;
@@ -28,4 +29,30 @@ public class CatSet : ScriptableObject
     public GameObject Wings;
     public GameObject Nipples;
     
+
+    public GameObject GetPrefabForJointType(CatJointType jointType)
+    {
+        switch (jointType)
+        {
+            case CatJointType.FrontLeftLeg:
+                return FrontLeftLegPrefab;
+            case CatJointType.FrontRightLeg:
+                return FrontRightLegPrefab;
+            case CatJointType.BackLeftLeg:
+                return BackLeftLegPrefab;
+            case CatJointType.BackRightLeg:
+                return BackRightLegPrefab;
+            case CatJointType.LeftEar:
+                return LeftEar;
+            case CatJointType.RightEar:
+                return RightEar;
+            case CatJointType.LeftEye:
+                return LeftEye;
+            case CatJointType.RightEye:
+                return RightEye;
+        }
+
+        return null;
+
+    }
 }

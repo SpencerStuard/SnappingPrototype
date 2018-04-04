@@ -11,38 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1433a3533dfba4f8891fe788a30fed, type: 3}
   m_Name: CatParts_Default
   m_EditorClassIdentifier: 
-  CatTypes:
-  - {fileID: 11400000, guid: 08283bae064ce7d46b5795e0bc511b52, type: 2}
-  - {fileID: 11400000, guid: 458559b18af319f4cb95f4500d14dba5, type: 2}
-  - {fileID: 11400000, guid: 1fd328d8ffaec48459ff90a78d3d7642, type: 2}
-  - {fileID: 11400000, guid: 0e5c70c946989b944bb5f6f58c770781, type: 2}
-  - {fileID: 11400000, guid: 4ed037847685df04499575e0d3c87b2e, type: 2}
-  - {fileID: 11400000, guid: f53cdd5a89cdae24787b4015d0d97584, type: 2}
-  - {fileID: 11400000, guid: 218901ea24762104da305feec15df33e, type: 2}
-  GoodBodyBase: []
-  GoodFrontLeftLeg: []
-  GoodFrontRightLeg: []
-  GoodBackLeftLeg: []
-  GoodBackRightLeg: []
-  GoodLeftEar: []
-  GoodRightEar: []
-  GoodMouth: []
-  GoodTail: []
-  GoodLeftEye: []
-  GoodRightEye: []
-  GoodButts: []
-  BadBodyBase: []
-  BadFrontLeftLeg_: []
-  BadFrontRightLeg: []
-  BadBackLeftLeg: []
-  BadBackRightLeg: []
-  BadLeftEar: []
-  BadRightEar: []
-  BadMouth: []
-  BadTail: []
-  BadLeftEye: []
-  BadRightEye: []
-  BadButts: []
-  BadHorns: []
-  BadWings: []
-  BadNippels: []
+  GoodCatFurTypes:
+  - {fileID: 11400000, guid: ff992425e42244b4bb4db7e504c9a3b5, type: 2}
+  - {fileID: 11400000, guid: 70b2ad23ab127604a87a21030abafe16, type: 2}
+  - {fileID: 11400000, guid: 333d45f39efa81d4f9c5ad526d543f38, type: 2}
+  - {fileID: 11400000, guid: 7ca32cc7b4f283d48a5ab5df3d38b9b5, type: 2}
+  - {fileID: 11400000, guid: a7e7af21a4cde2040978f995fa148498, type: 2}
+  - {fileID: 11400000, guid: f0ec377c940907a46914af721368c11a, type: 2}
+  - {fileID: 11400000, guid: 7299343791142f044bd6a90960372121, type: 2}
+  - {fileID: 11400000, guid: 172108b505338514ca3013a6780e440f, type: 2}
+  GoodCatSets:
+  - {fileID: 11400000, guid: 08f226a372b1ed845a3bd3743d355ce7, type: 2}
+  BadCatSets: []

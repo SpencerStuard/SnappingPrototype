@@ -18,10 +18,9 @@ public class DebugCleanupScripts : MonoBehaviour
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
         foreach(Renderer r in renderers)
         {
-            for(int i = 0; i < r.sharedMaterials.Length; i ++)
-            {
-                r.sharedMaterials[i] = matToAssign;
-            }
+         
+             r.material = matToAssign;
+            
         }
     }
 

@@ -154,7 +154,6 @@ public class HandInteractionController : MonoBehaviour
     {
         InteractableObject o = g.GetComponent<InteractableObject>();
         if (o.rb == null) o.rb = o.GetComponent<Rigidbody>();
-        Debug.Log("Hold Spawned Object " + g.name);
         HoldObject(o);
     }
 
