@@ -5,27 +5,33 @@ using CatDataTypes;
 
 public class SnappingCatPart : InteractableObject
 {
-
     public bool snapped = false;
     public CatSnapPoint snappedToPoint;
     public Transform presnapParent = null;
-
     public bool inSnapZone = false;
     public List<CatSnapZone> snapZones = new List<CatSnapZone>();
     public CatSnapPoint potentialSnapPoint;
     public GameObject previewSnapObject;
     [HideInInspector]public Bounds combinedBounds;
-
     public bool isDynamic = false;
 
     //CatStuff
     public CatPartReference partReference;
+    public CatPartHighlighter highlighter;
 
     // Use this for initialization
     public override void Start ()
     {
         base.Start();
         CalculateCombinedBounds();
+        if (GetComponent<CatPartHighlighter>())
+        {
+            highlighter = GetComponent<CatPartHighlighter>();
+        }
+        else
+        {
+            Debug.Log("Could not find highlighter on " + gameObject.name);
+        }
 	}
 
     void CalculateCombinedBounds()
@@ -53,7 +59,8 @@ public class SnappingCatPart : InteractableObject
         {
             if (snapZones.Contains(other.GetComponent<CatSnapZone>())) return;
             inSnapZone = true;
-            snapZones.Add(other.GetComponent<CatSnapZone>());
+            CatSnapZone z = other.GetComponent<CatSnapZone>();
+            if(!z.IsZoneFull()) snapZones.Add(z);
         }
     }
 
@@ -74,11 +81,13 @@ public class SnappingCatPart : InteractableObject
     public override void OnBeginHighlight()
     {
         base.OnBeginHighlight();
+        if(highlighter != null) highlighter.ApplyHighlight();
     }
 
     public override void OnEndHighlight()
     {
         base.OnEndHighlight();
+        if (highlighter != null) highlighter.RemoveHighlight();
     }
 
     public override void OnHoldInteractable(HandInteractionController handController)
@@ -93,9 +102,9 @@ public class SnappingCatPart : InteractableObject
 
         if (inSnapZone && potentialSnapPoint != null)
         {
-            FinalizeSnap();
             VRSystemInput.Input.leftHand.RemoveInteractableObject(this);
             VRSystemInput.Input.rightHand.RemoveInteractableObject(this);
+            FinalizeSnap();
         }
         else
         {
@@ -117,6 +126,7 @@ public class SnappingCatPart : InteractableObject
 
         foreach (CatSnapZone s in snapZones)
         {
+            if (s.IsZoneFull()) continue;
             float dist = Vector3.Distance(transform.position, s.transform.position);
             if (dist < bestDist)
             {
@@ -132,6 +142,7 @@ public class SnappingCatPart : InteractableObject
     void PreviewSnap()
     {
         CatSnapZone zone = BestSnapZone();
+        if (zone == null) return;
         potentialSnapPoint = zone.BestSnapPointForSnappingObject(this);
 
         if (potentialSnapPoint == null) return;
@@ -141,10 +152,16 @@ public class SnappingCatPart : InteractableObject
             previewSnapObject = (GameObject) Instantiate(gameObject, potentialSnapPoint.transform.position, potentialSnapPoint.transform.rotation);
             previewSnapObject.transform.parent = potentialSnapPoint.transform;
             InteractableObject i = previewSnapObject.GetComponent<InteractableObject>();
-            i.rb.detectCollisions = false;
+            i.OnBeginHighlight();
+            DestroyImmediate(previewSnapObject.GetComponent<Rigidbody>());
             Object.DestroyImmediate(i);
-            previewSnapObject.tag = "Untagged";
-            if (zone.highlighter != null) zone.highlighter.ApplyHighlightToGameObject(previewSnapObject);
+            
+            foreach(Collider c in previewSnapObject.GetComponentsInChildren<Collider>())
+            {
+                DestroyImmediate(c);
+            }
+
+
         }
         else
         {
@@ -156,6 +173,7 @@ public class SnappingCatPart : InteractableObject
 
     void FinalizeSnap()
     {
+        Debug.Log("Finalizing Snap");
         if(potentialSnapPoint == null)
         {
             Debug.LogWarning("Could not find good snap point");

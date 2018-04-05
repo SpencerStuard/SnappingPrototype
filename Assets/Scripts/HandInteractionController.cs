@@ -11,6 +11,7 @@ public class HandInteractionController : MonoBehaviour
 
     public Transform holdPoint;
     public InteractableObject heldObject;
+    public InteractableObject potentialObject = null;
     public FixedJoint tempJoint;
 
     VRSystemInput Input;
@@ -128,6 +129,12 @@ public class HandInteractionController : MonoBehaviour
     {
         if (interactablesInRange.Contains(o) && interactableDictionary.ContainsKey(o))
         {
+            if (o == null) return;
+            if (o == potentialObject)
+            {
+                potentialObject.OnEndHighlight();
+                potentialObject = null;
+            }
             interactablesInRange.Remove(o);
             interactableDictionary.Remove(o);
         }
@@ -161,6 +168,12 @@ public class HandInteractionController : MonoBehaviour
     {
         io.OnHoldInteractable(this);
 
+        if(potentialObject != null)
+        {
+            potentialObject.OnEndHighlight();
+            potentialObject = null;
+        }
+
         CreateTempJoint();
         heldObject = io;
         tempJoint.connectedBody = io.rb;
@@ -176,23 +189,46 @@ public class HandInteractionController : MonoBehaviour
 
     void Update()
     {
-        if (interactablesInRange.Count > 0)
+        if (heldObject != null)
+        {
+            if (Input.GetPickupUp(hand))
+            {
+                if(heldObject.usePickupButton) ReleaseHeldObject();
+            }
+
+            if (Input.GetInteractUp(hand))
+            {
+                if (heldObject.useInteractButton) ReleaseHeldObject();
+            }
+        }
+        else if(interactablesInRange.Count > 0)
         {
             interactablesInRange.Sort(CompareInteractableDistance);
+            if (potentialObject == null)
+            {
+                potentialObject = interactablesInRange[0];
+                potentialObject.OnBeginHighlight();
+            }
+            if(interactablesInRange[0] != potentialObject)
+            {
+                potentialObject.OnEndHighlight();
+                potentialObject = interactablesInRange[0];
+                potentialObject.OnBeginHighlight();
+            }
 
             if (Input.GetPickupDown(hand))
             {
                 InteractableObject o = null;
-                foreach(InteractableObject i in interactablesInRange)
+                foreach (InteractableObject i in interactablesInRange)
                 {
                     if (i.usePickupButton)
                     {
                         o = i;
                         break;
-                    } 
+                    }
                 }
 
-                if(o != null) HoldObject(o);
+                if (o != null) HoldObject(o);
             }
 
             if (Input.GetInteractDown(hand))
@@ -208,19 +244,6 @@ public class HandInteractionController : MonoBehaviour
                 }
 
                 if (o != null) HoldObject(o);
-            }
-        }
-
-        if (heldObject != null)
-        {
-            if (Input.GetPickupUp(hand))
-            {
-                if(heldObject.usePickupButton) ReleaseHeldObject();
-            }
-
-            if (Input.GetInteractUp(hand))
-            {
-                if (heldObject.useInteractButton) ReleaseHeldObject();
             }
         }
 

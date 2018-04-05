@@ -14,6 +14,17 @@ public class CatSnapZone : MonoBehaviour
     {
 	}
 	
+    public bool IsZoneFull()
+    {
+        bool full = true;
+
+        foreach(CatSnapPoint p in snapPoints)
+        {
+            if (p.occupied == false) full = false;
+        }
+
+        return full;
+    }
 
     public CatSnapPoint BestSnapPointForSnappingObject(SnappingCatPart snapObject)
     {
