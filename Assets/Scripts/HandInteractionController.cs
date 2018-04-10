@@ -33,7 +33,7 @@ public class HandInteractionController : MonoBehaviour
 
     public Vector3 GetHandAngularVelocity()
     {
-        return Input.GetAngularVelocity(hand);
+        return transform.TransformDirection(Input.GetAngularVelocity(hand));
     }
 
     public bool isHoldingObject()
@@ -148,8 +148,8 @@ public class HandInteractionController : MonoBehaviour
     void CreateTempJoint()
     {
         tempJoint = gameObject.AddComponent<FixedJoint>();
-        tempJoint.breakForce = 4000f;
-        tempJoint.breakTorque = 4000f;
+        tempJoint.breakForce = 10000f;
+        tempJoint.breakTorque = 10000f;
     }
 
     void RemoveTempJoint()

@@ -407,6 +407,7 @@ MonoBehaviour:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   isDynamic: 0
+  snapToController: 0
   partReference:
     isGoodPart: 1
     furType: {fileID: 11400000, guid: 7299343791142f044bd6a90960372121, type: 2}
@@ -414,6 +415,7 @@ MonoBehaviour:
     limbType: 2
     fromSet: {fileID: 11400000, guid: 98a1c5519f24dd94e9b86db90e56c043, type: 2}
   highlighter: {fileID: 0}
+  pointValue: 10
 --- !u!114 &114656836732155398
 MonoBehaviour:
   m_ObjectHideFlags: 1

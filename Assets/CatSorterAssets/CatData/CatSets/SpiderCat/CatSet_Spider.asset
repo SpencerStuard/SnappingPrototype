@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9edbd4c04b35b4d8355f04a08959d9, type: 3}
+  m_Name: CatSet_Spider
+  m_EditorClassIdentifier: 
+  Name: SpiderCat
+  unlocked: 0
+  isGoodSet: 0
+  bodyTexture: {fileID: 2800000, guid: 71a5b0162d8f7b343ab16239dc28aee7, type: 3}
+  eyeTexture: {fileID: 2800000, guid: c71c6eb9e9383ec40927bfd26fd87a53, type: 3}
+  BodyPrefab: {fileID: 0}
+  FrontLeftLegPrefab: {fileID: 1320372431216146, guid: 92c55558dc2922144a445409877e0586,
+    type: 2}
+  FrontRightLegPrefab: {fileID: 1203354361691520, guid: cbc80fdc77eb92747b2057abf2b201cd,
+    type: 2}
+  BackLeftLegPrefab: {fileID: 1519282989650584, guid: 571cc5a0b02a9c1478603c620c30d5c7,
+    type: 2}
+  BackRightLegPrefab: {fileID: 1263849899738598, guid: 99054b4b8ce056c45bd3b6bc304c7669,
+    type: 2}
+  LeftEar: {fileID: 0}
+  RightEar: {fileID: 0}
+  LeftEye: {fileID: 1392009156460822, guid: 92ee67ddfc0d022458252147f6937109, type: 2}
+  RightEye: {fileID: 1873173246138544, guid: c79571b844005964cb3670e1c30229d1, type: 2}
+  Mouth: {fileID: 1633905142029860, guid: 52ecd2de68d13c34ca48bdb64f7d6446, type: 2}
+  Tail: {fileID: 0}
+  Butt: {fileID: 0}
+  Horns: {fileID: 0}
+  Wings: {fileID: 0}
+  Nipples: {fileID: 0}

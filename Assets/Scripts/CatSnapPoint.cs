@@ -8,9 +8,13 @@ public class CatSnapPoint : MonoBehaviour
 
     public CatJointType jointType;
     public CatLimbType limbType;
-
     public bool occupied;
     public SnappingCatPart snappedObject;
+
+    bool spawnedWithBadPart = false;
+    bool addedPoints = false;
+    public bool satisfied = true;
+
     InteractableObject root;
     CatInstance cat;
     FixedJoint snapJoint;
@@ -34,7 +38,7 @@ public class CatSnapPoint : MonoBehaviour
         
         //snap position
         sio.transform.position = transform.position;
-        sio.transform.rotation = transform.rotation;
+        if(sio.partReference.limbType == limbType) sio.transform.rotation = transform.rotation;
 
         //chatnge object layers
         sio.gameObject.layer = 9;
@@ -83,6 +87,19 @@ public class CatSnapPoint : MonoBehaviour
             cat.furType.ChangePartToMatch(sio.gameObject);
         }
 
+        //Handle Scoring
+        if (goodSnap)
+        {
+            if(spawnedWithBadPart && !addedPoints)
+            {
+                cat.CatPointValue += sio.pointValue;
+                addedPoints = true;
+            }
+
+            satisfied = true;
+        }
+
+
         SnapObject(sio);
     }
 
@@ -115,9 +132,31 @@ public class CatSnapPoint : MonoBehaviour
         newCatPart.presnapParent = null;
         cat.furType.ChangePartToMatch(newPart);
 
-        if(newCatPart.partReference.isGoodPart && cat.furType != newCatPart.partReference.furType)
+        if (newCatPart.partReference.isGoodPart)
         {
-            cat.furType.ChangePartToMatch(newPart);
+            //fix fur
+            if(cat.furType != newCatPart.partReference.furType)
+            {
+                cat.furType.ChangePartToMatch(newPart);
+            }
+
+            satisfied = true;
+            spawnedWithBadPart = false;
+        }
+        else
+        {
+            satisfied = false;
+            spawnedWithBadPart = true;
+
+            if(limbType == CatLimbType.Eye)
+            {
+                newCatPart.partReference.fromSet.AssignEyeTextureToGameObject(newPart);
+            }
+            else
+            {
+                newCatPart.partReference.fromSet.AssignBodyTextureToGameObject(newPart);
+
+            }
         }
 
         SnapObject(newCatPart);
@@ -163,5 +202,6 @@ public class CatSnapPoint : MonoBehaviour
 
         occupied = false;
         snappedObject = null;
+        satisfied = false;
     }
 }

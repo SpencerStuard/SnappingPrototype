@@ -14,10 +14,11 @@ public class SnappingCatPart : InteractableObject
     public GameObject previewSnapObject;
     [HideInInspector]public Bounds combinedBounds;
     public bool isDynamic = false;
-
+    public bool snapToController = false;
     //CatStuff
     public CatPartReference partReference;
     public CatPartHighlighter highlighter;
+    public int pointValue = 0;
 
     // Use this for initialization
     public override void Start ()
@@ -93,6 +94,7 @@ public class SnappingCatPart : InteractableObject
     public override void OnHoldInteractable(HandInteractionController handController)
     {
         base.OnHoldInteractable(handController);
+        if (snapToController) transform.position = handController.transform.position;
         if (snapped) UnSnap();
     }
 

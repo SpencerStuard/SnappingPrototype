@@ -16,7 +16,7 @@ MonoBehaviour:
   isGoodSet: 1
   bodyTexture: {fileID: 0}
   eyeTexture: {fileID: 2800000, guid: 951fdf111809c884cb9a1136f2bb12d6, type: 3}
-  BodyPrefab: {fileID: 1032876067248966, guid: 1ae5e285bc290fc4eb184893841b358d, type: 2}
+  BodyPrefab: {fileID: 1440398123378816, guid: 4422ab28bac749744b32a8cadbe96c43, type: 2}
   FrontLeftLegPrefab: {fileID: 1438265822900304, guid: 338c4263e83f626439f43deef618d06d,
     type: 2}
   FrontRightLegPrefab: {fileID: 1701500145996408, guid: 2174a09414fc3664599e44ab2148ac1c,

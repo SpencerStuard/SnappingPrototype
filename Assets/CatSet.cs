@@ -30,6 +30,26 @@ public class CatSet : ScriptableObject
     public GameObject Nipples;
     
 
+    public void AssignBodyTextureToGameObject(GameObject go)
+    {
+        Renderer[] renderers = go.GetComponentsInChildren<Renderer>();
+        foreach (Renderer r in renderers)
+        {
+            r.material.mainTexture = bodyTexture;
+        }
+    }
+
+
+    public void AssignEyeTextureToGameObject(GameObject go)
+    {
+        Renderer[] renderers = go.GetComponentsInChildren<Renderer>();
+        foreach (Renderer r in renderers)
+        {
+            r.material.mainTexture = eyeTexture;
+        }
+    }
+
+
     public GameObject GetPrefabForJointType(CatJointType jointType)
     {
         switch (jointType)

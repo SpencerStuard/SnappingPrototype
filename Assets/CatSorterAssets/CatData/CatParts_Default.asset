@@ -22,4 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 172108b505338514ca3013a6780e440f, type: 2}
   GoodCatSets:
   - {fileID: 11400000, guid: 98a1c5519f24dd94e9b86db90e56c043, type: 2}
-  BadCatSets: []
+  BadCatSets:
+  - {fileID: 11400000, guid: 1b9e6e29ec0ea134eaee1b1e2afe05a2, type: 2}

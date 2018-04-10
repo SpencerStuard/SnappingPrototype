@@ -22,4 +22,35 @@ public class CatInstance : MonoBehaviour
     public CatSnapPoint WingsSnap;
     public CatSnapPoint NipplesSnap;
 
+    List<CatSnapPoint> requiredSnapPoints = new List<CatSnapPoint>();
+
+    public int badPartsAssigned = 0;
+    public int CatPointValue = 100;
+
+    public bool IsCatComplete()
+    {
+        bool isGood = true;
+        foreach(CatSnapPoint p in requiredSnapPoints)
+        {
+            if (!p.satisfied) isGood = false;
+        }
+
+        return isGood;
+    }
+
+    private void Awake()
+    {
+        requiredSnapPoints.Add(FrontLeftLegSnap);
+        requiredSnapPoints.Add(FrontRightLegSnap);
+        requiredSnapPoints.Add(BackLeftLegSnap);
+        requiredSnapPoints.Add(BackRightLegSnap);
+        requiredSnapPoints.Add(LeftEarSnap);
+        requiredSnapPoints.Add(RightEarSnap);
+        requiredSnapPoints.Add(MouthSnap);
+        requiredSnapPoints.Add(TailSnap);
+        requiredSnapPoints.Add(LeftEyeSnap);
+        requiredSnapPoints.Add(RightEyeSnap);
+        requiredSnapPoints.Add(ButtSnap);
+    }
+
 }
